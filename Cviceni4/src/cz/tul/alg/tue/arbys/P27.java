@@ -5,9 +5,8 @@ import java.util.Scanner;
 public class P27 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String num = "25911597";
-        //System.out.println("Zadej celé kladné číslo: ");
-        //long number = Math.abs(scanner.nextLong());
+        System.out.println("Zadej celé kladné číslo: ");
+        String num = scanner.nextLine();
         int sum = 0;
         int helper = 0;
         boolean valid = false;
