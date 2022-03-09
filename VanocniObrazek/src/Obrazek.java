@@ -39,12 +39,12 @@ public class Obrazek {
                 int randomNumber = (int)(Math.random()*100);
                 if(randomNumber<= frequency*10)
                 {
-                    smokeString+="o";
+                    smokeString +="o";
                     continue;
                 }
                 smokeString+=" ";
             }
-            output+= String.format("%s%s\n", repeatString((bricksBeforeChimney*ONE_BRICK_LENGTH)-2, " "), smokeString);
+            output += String.format("%s%s\n", repeatString((bricksBeforeChimney*ONE_BRICK_LENGTH)-2, " "), smokeString);
         }
 
         output += String.format("%s.%s.\n", repeatString(bricksBeforeChimney*ONE_BRICK_LENGTH, " "), repeatString(ONE_BRICK_LENGTH, "_"));
